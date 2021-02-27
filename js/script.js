@@ -1,7 +1,16 @@
-
 "use strict";
+let numberOfFilms;
 
-const numberOfFilms = +prompt("Skolko filmov vy posmoteli?", "");
+function start() {
+    numberOfFilms = +prompt("Skolko filmov vy posmoteli?", "");
+
+    while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt("Skolko filmov vy posmoteli?", "");
+    }
+
+}
+
+start();
 const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
@@ -39,7 +48,7 @@ switch (value) {
     case 100:
         console.log("Too much!");
         break;
-    case 50 : 
+    case 50:
         console.log("True!");
         break;
     default:
@@ -47,20 +56,20 @@ switch (value) {
 }
 
 let num2 = 50;
-while (num2 <55) {
+while (num2 < 55) {
     console.log(num2);
-    num2 ++;
+    num2++;
 }
 
 let num3 = 50;
-do{
+do {
     console.log(num3);
-    num3 ++;
+    num3++;
 }
-while (num3 <55);
+while (num3 < 55);
 
-for (let i = 1; i<8; i++){
-    if (i === 6){
+for (let i = 1; i < 8; i++) {
+    if (i === 6) {
         //break;
         continue;
     }
