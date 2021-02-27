@@ -75,3 +75,12 @@ for (let i = 1; i < 8; i++) {
     }
     console.log(i);
 }
+
+function learnJS (lang, callback){
+    console.log(`I am learning: ${lang}`);
+    callback();
+}
+
+learnJS ("Javascript ", function(){
+    console.log("Lesson tasks done");
+});
