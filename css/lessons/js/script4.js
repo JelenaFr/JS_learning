@@ -66,4 +66,4 @@ wrapper.append(div);
 
 div.innerHTML = "<h1>Hello World</h1>!";
 //div.textContent = "Hello JS";
-div.insertAdjacentHTML("beforeend", "<h2>HELLO</h2>");
+div.insertAdjacentHTML("beforebegin", "<h2>HELLO</h2>");
